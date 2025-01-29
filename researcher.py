@@ -8,9 +8,6 @@ Created on Wed Jan 29 12:01:40 2025
 import streamlit as st
 import pandas as pd
 
-
-
-st.image("image.png")
 # Title of the app
 st.title("Researcher Profile Page")
 
@@ -24,11 +21,6 @@ st.header("Researcher Overview")
 st.write(f"**Name:** {name}")
 st.write(f"**Field of Research:** {field}")
 st.write(f"**Institution:** {institution}")
-
-
-
-
-
 
 st.write("GitHub is a website and cloud-based service that helps people store and manage any type of file, specifically their code. It allows them to track and control changes that may happen and collaborate with others too. It is used mostly by software developers and engineers, and since your learning to code it is a useful tool to learn. We will only be using a few features of it to give an idea of its usage. If you already have GitHub account then you can ignore this setup and use your existing GitHub account for the course.")
 
@@ -77,9 +69,6 @@ edited_df = st.data_editor(df)
 
 favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
 st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
-
-
-
 
 df = pd.DataFrame(
     [
